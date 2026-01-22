@@ -1,4 +1,9 @@
-// TEMP DRAMA DATA (baad mein backend se aayega)
+fetch("https://tikcolordrama-backend.onrender.com/api/dramas")
+  .then(res => res.json())
+  .then(data => {
+    console.log(data);
+  });
+
 const dramaData = [
   {
     id: 1,
@@ -68,3 +73,4 @@ if (dramaId) {
 
   player.src = drama.episodes[0].video;
 }
+
