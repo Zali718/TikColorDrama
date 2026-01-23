@@ -1,4 +1,4 @@
-fetch("https://tikcolordrama-backend.onrender.com/api/dramas")
+fetch("https://tikcolordrama-backend--henrytrucksmate.replit.app/api/dramas")
   .then(res => res.json())
   .then(data => {
     console.log(data);
@@ -73,4 +73,5 @@ if (dramaId) {
 
   player.src = drama.episodes[0].video;
 }
+
 
